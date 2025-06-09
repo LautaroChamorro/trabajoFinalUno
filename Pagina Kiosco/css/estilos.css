@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----Header-----*/
+.encabezadoDePagina {
+    background-color: rgba(0, 0, 0, 0.818);
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.encabezadoDePagina nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 60px;
+    align-items: center;
+}
+.encabezadoDePagina nav img{
+    height: 100px;
+    width: 50px;
+    margin-left: 15px;
+}
+.encabezadoDePagina nav p{
+    color: white;
+    font-size: 30px;
+    margin-right: 800px;
+}
+.encabezadoDePagina nav span{
+    color: red;
+}
+
+.encabezadoDePagina nav ul li {
+    margin: 20px;
+}
+
+.encabezadoDePagina nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+/*-----Main-----*/
+#nosotros{
+    background-image: url(/img/camille-san-vicente-VK620qNCUKo-unsplash.jpg);
+    width: 100%;
+    height:750px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+#nosotros div{
+    color: white;
+    border: 1px solid white;
+    padding: 30px;
+
+}
+#nosotros div p{
+    margin: 15px 120px 0px 120px;
+}
+
+
+.ofertasGrid{
+    display: grid;
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+    margin: 30px 5px 30px 5px;
+}
+.ofertasGrid .gridItem{
+    box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+}
+.ofertasGrid .gridItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.botones{
+    background-color:rgba(0, 0, 0, 0.818) ;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botonCarrito{
+    color: white;
+    background-color:rgba(215, 16, 16, 0.887) ;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+}
+#botonProductos{
+    color: white;
+    background-color:rgba(215, 16, 16, 0.887) ;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+}
+.containerProductos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.containerCarrito{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cardProducto{
+    width: 350px;
+    height: 470px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+.cardProducto:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.cardProducto img{
+    width: 350px;
+    height: 350px;
+}
+
+.cardProducto h2{
+    color: white;
+    padding: 2px; 
+    font-weight: 500;
+    font-size: 25px;
+    background-color: rgba(215, 16, 16, 0.887);
+    font-family: 'Kanit', sans-serif;
+}
+
+.cardProducto h3{
+    padding: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.agregarAlCarrito{
+    background-color: rgba(215, 16, 16, 0.887);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    padding: 3px;
+    border-radius: 5px;
+}
+.tituloContacto{
+    background-color: rgba(0, 0, 0, 0.818);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.tituloContacto h2{
+    color:white ;
+    font-family: 'Pacifico', cursive;
+}
+#contacto{
+    background-image: url(/img/pencil-color-colorful-colored.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+}
+#contacto iframe{
+    box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 0px 26px 4px rgba(0, 0, 0, 0.5);
+}
+.tituloRedes{
+    background-color: rgba(0, 0, 0, 0.818);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.tituloRedes h2{
+    color:white ;
+    font-family: 'Pacifico', cursive;
+}
+.redes{
+    background-image: url(/img/coloresReversa.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+}
+.redes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes div img{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.redes div a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+.marcas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+.marcas img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    margin: 5px 10px 5px 10px;
+}
+.divTotalCarrito{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.818);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+}
+.carritoDeCompras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formulario{
+    background-color: rgba(215, 16, 16, 0.887);
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Kanit', sans-serif;
+    flex: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario div{
+    margin: 5px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario h2{
+    margin: 20px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+.botonRealizarCompra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonRealizarCompra button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 5px;
+}
+.formulario div input{
+    width: 200px;
+    margin-left: 5px;
+}
+
+
+/*-----Footer-----*/
